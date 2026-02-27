@@ -1,5 +1,5 @@
 # Tic-tac-toe_plus_AI
-:::align{center}
+
 
 ![](https://cdn.luogu.com.cn/upload/image_hosting/06wqmv0v.png)
 
