@@ -3,7 +3,7 @@
 
 ![](https://cdn.luogu.com.cn/upload/image_hosting/06wqmv0v.png)
 
-:::
+
 
 如果你在不允许玩此小游戏的时候玩，后果自负。
 
