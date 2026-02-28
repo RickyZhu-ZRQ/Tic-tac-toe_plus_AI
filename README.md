@@ -4,12 +4,13 @@
 ![](https://cdn.luogu.com.cn/upload/image_hosting/06wqmv0v.png)
 
 
-
-如果你在不允许玩此小游戏的时候玩，后果自负。
+**如果你在不允许玩此小游戏的时候玩，后果自负。**
 
 ## 项目概述
 
 这是一个智能**升级版**井字棋软件，你可以和 AI 对弈或者双人对弈，甚至可以看 AI 自己和自己对弈。
+
+**提示：该项目只能在 Windows 下运行。**
 
 ## 适用对象
 
@@ -32,7 +33,7 @@
 ## 代码揭秘
 
 - 游戏界面使用 Windows 控制台函数编写，轻量而无需外来库。
-- 核心 AI 使用 [Minimax](https://oi-wiki.org/search/alpha-beta/) 对抗搜索实现，并加上状态压缩的记忆化数组。
+- 核心 AI 使用 Minimax 对抗搜索实现，并加上状态压缩的记忆化数组。
 
 ## 界面展示
 
@@ -58,8 +59,30 @@ DeepSeek、豆包、千问等多个 AI 大模型在项目制作过程中为我�
 
 ## 友情链接
 
-[项目可执行文件](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/0j81vmxc)
+[项目可执行文件](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/v7qsd245)
 
-[项目源代码](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/8jag0cd8)（编译 zhiyi.dev 即可得到可执行文件）
+下载后解压，运行 zhiyi.exe 即可。
 
-[项目文档](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/l0cj5uho)
+[项目源代码](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/x5hmu1jw)
+
+提示：解压后在 **run.cpp 所在的文件夹**中新建一个 build.cpp，内容如下。
+
+```cpp line-numbers
+#include<cstdlib>
+int main(){
+    system("\"g++.exe\" ./run.cpp ./dfs.cpp -o ./zhiyi.exe -std=c++14 -O2 -static -Wl,--stack=67108864");
+    return 0;
+}
+```
+再将程序中的 `g++.exe` 替换成你自己电脑上 g++ 的位置（**不含表示位置的引号，因为已经在程序中出现了**，相对位置和绝对位置皆可），编译运行，即可得到可以玩的 zhiyi.exe。
+
+[项目文档](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/8pq6wo3s)
+
+其中介绍了此游戏的具体操作方法。
+
+## 参考文档
+
+在项目制作过程中，我们参考了以下文章，感谢它们的作者：
+
+- [Alpha-Beta 剪枝 - OI Wiki](https://oi-wiki.org/search/alpha-beta/)
+- [完全信息对抗性博弈算法从入门到初识 - 洛谷专栏](https://www.luogu.com.cn/article/6xz49rys)s://www.luogu.com.cn/fe/api/problem/downloadAttachment/l0cj5uho)
