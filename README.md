@@ -81,4 +81,4 @@ int main(){
 在项目制作过程中，我们参考了以下文章，感谢它们的作者：
 
 - [Alpha-Beta 剪枝 - OI Wiki](https://oi-wiki.org/search/alpha-beta/)
-- [完全信息对抗性博弈算法从入门到初识 - 洛谷专栏](https://www.luogu.com.cn/article/6xz49rys)s://www.luogu.com.cn/fe/api/problem/downloadAttachment/l0cj5uho)
+- [完全信息对抗性博弈算法从入门到初识 - 洛谷专栏](https://www.luogu.com.cn/article/6xz49rys)
