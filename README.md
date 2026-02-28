@@ -59,11 +59,7 @@ DeepSeek、豆包、千问等多个 AI 大模型在项目制作过程中为我�
 
 ## 友情链接
 
-[项目可执行文件](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/v7qsd245)
 
-下载后解压，运行 zhiyi.exe 即可。
-
-[项目源代码](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/x5hmu1jw)
 
 提示：解压后在 **run.cpp 所在的文件夹**中新建一个 build.cpp，内容如下。
 
