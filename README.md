@@ -1,82 +1,84 @@
-# Tic-tac-toe_plus_AI
-
-
 ![](https://cdn.luogu.com.cn/upload/image_hosting/06wqmv0v.png)
 
+[前情提要](https://www.luogu.com.cn/article/k3wx8ohb)
+
+[洛谷对应专栏](https://www.luogu.com.cn/article/miq58bj8)
 
 **如果你在不允许玩此小游戏的时候玩，后果自负。**
 
 ## 项目概述
 
-这是一个智能**升级版**井字棋软件，你可以和 AI 对弈或者双人对弈，甚至可以看 AI 自己和自己对弈。
+这是一个智能**升级版**井字棋软件，你可以和 AI 对弈或者双人对弈，甚至可以看 AI 自己和自己对弈。对于更多项目的细节，你可以在文初的“前情提要”了解。
 
 **提示：该项目只能在 Windows 下运行。**
 
-## 适用对象
+## 更新内容
 
-- 在**空闲时分**希望稍稍娱乐，又没有同伴一起玩。
-- 想和同伴一起玩这个游戏，却因其规则不易用纸笔模拟而不便。
-- 想开发一个棋类简易 AI，又找不到示例。
+在原版本的基础上，我们对项目做了以下修改：
 
-## 游戏规则
+- 增加游戏的“难度选择”功能，将和“参数配置”在一起，机制类似，共有“简单”“中等”“困难”“王者”四个难度（AI 强度）
+- 加快 AI 在后期的运行速度
+- 优化界面，增加一些清屏
+- 对 GitHub 仓库进行完善
 
-### 基本规则（普通井字棋）：
-1. 两个玩家轮流在 3×3 棋盘上下子
-2. 先连成一条长度为 3 直线（横、竖、斜）的玩家获胜
-### 特殊规则（井字棋Plus新增）：
+## 活动：你们的 AI 有问题
 
-1. 第 6 子落下后 → 消第 1 子
-2. 第 7 子落下后 → 消第 2 子
-3. 第 8 子落下后 → 消第 3 子
-4. 以此类推，循环消失
+如果你在“**人机对弈（AI 先手）**”模式下、难度选择为“**王者**”的情况下使 AI 没有在第 13 步及以内获胜（这里一步指的是玩家**或** AI 下子一次，即 2 步为一回合），你将获得两个关注，仅限前 3 名。
 
-## 代码揭秘
+如果你在“**人机对弈（AI 先手）**”或“**人机对弈（你先手）**”模式下、难度选择为“**王者**”的情况下在第 12 步及以内获胜（这里一步指的是玩家**或** AI 下子一次，即 2 步为一回合），你将获得两个关注，仅限前 3 名。
 
-- 游戏界面使用 Windows 控制台函数编写，轻量而无需外来库。
-- 核心 AI 使用 Minimax 对抗搜索实现，并加上 Alpha-Beta 剪枝。
+对于奖励的领取，请**[洛谷](https://www.luogu.com.cn)私信** @[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋奖励领取】”。为了避免虚假情况，我们可能会询问你的下棋步骤。
 
-## 界面展示
+**提示：不一定存在拿到奖励的操作步骤。**
 
-这里展示了几个运行时的界面，完整运行方法详见文末的项目文档。
+## 相关链接
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/1tqnawim.png)
+[项目文档](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/3vlg44rr)
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/ewda5k4u.png)
+[可执行文件](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/jmvqf0ei)
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/ijdj2xhd.png)
+[项目源代码](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/y6d0kqz3)
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/n0s5xraj.png)
+[更新公告板](https://www.luogu.com.cn/problem/U665191)（这里可以第一时间获得程序的新版本与活动）
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/hpeikf7b.png)
+## 常见问题
 
-## 分工
+- 可执行文件显示不安全怎么办？
+  
+请忽略系统的提示，我们保证项目是安全的。
 
-@[RickyZhu](https://www.luogu.com.cn/user/2003521) 编写了主界面程序。
+- 源代码显示乱码怎么办？
 
-@[wolf224322](https://www.luogu.com.cn/user/1826908) 编写了底层 AI 算法。
+请将源代码**文件**拖入游览器中，复制文本粘贴回编辑器。（实测笔者 Windows 11 电脑的 Edge 游览器可以）
 
-DeepSeek、豆包、千问等多个 AI 大模型在项目制作过程中为我们提供了算法、调试、Logo 等多方面的帮助。
+- 如何运行三个文件？
 
-## 运行方式
+解压并处理（可能的）编码问题后在 **run.cpp 所在的文件夹**中新建一个 build.cpp，内容如下。
 
-下载 **智弈升级版井字棋** 压缩包后解压，运行 zhiyi.exe 即可。
-
-**如果弹出“该程序不安全”之类的提示，请忽略。我们保证此程序不会损害你的电脑。**
-
-项目源代码在 **代码包** 压缩包中。
-
-提示：解压后在 **run.cpp 所在的文件夹**中新建一个 build.cpp，内容如下。
-
-```cpp line-numbers
+```cpp
 #include<cstdlib>
 int main(){
-    system("\"g++.exe\" ./run.cpp ./dfs.cpp -o ./zhiyi.exe -std=c++14 -O2 -static -Wl,--stack=67108864");
-    return 0;
+	system("\"g++.exe\" ./run.cpp ./dfs.cpp -o ./zhiyi.exe -std=c++14 -O2 -static -Wl,--stack=67108864");
+	return 0;
 }
 ```
 再将代码中的 `g++.exe` 替换成你自己电脑上 g++ 的位置（**不含表示位置的引号，因为已经在程序中出现了，但特殊字符需转义**，相对位置和绝对位置皆可），编译运行，即可得到可以玩的 zhiyi.exe。
 
- **项目文档** 中介绍了此游戏的具体操作方法。
+- 为什么要使用题目作为公告板？
+
+我们发现如果使用剪贴板或公开文章作为公告板，需要至[洛谷保存站](https://luogu.me)访问，对于限制网络的同学不太方便。于是我们模仿部分比赛的公告栏，使用题目作为公告板。
+
+- 如何提出建议？
+
+请[**洛谷**](https://www.luogu.com.cn)私信@[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋建议反馈】”。同时，你也可以通过在此项目下加 Issue 来提出建议。
+
+## 致谢
+
+感谢 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 编写大部分项目代码。
+
+感谢 @[lijingshu_304775](https://www.luogu.com.cn/user/1019968)、@[jsntzth666](https://www.luogu.com.cn/user/1294443)、@[chenyongxi3](https://www.luogu.com.cn/user/1047464)、@[ChasonWang](https://www.luogu.com.cn/user/1251100) 为我们原版项目提出建议，使我们的项目越来越好。
+
+感谢 DeepSeek、百度 AI、千问等 AI 模型为我们的项目做出一些帮助。
 
 ## 参考文章
 
