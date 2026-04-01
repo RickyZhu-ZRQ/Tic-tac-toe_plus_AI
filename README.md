@@ -27,7 +27,7 @@
 
 如果你在“**人机对弈（AI 先手）**”或“**人机对弈（你先手）**”模式下、难度选择为“**王者**”的情况下在第 12 步及以内获胜（这里一步指的是玩家**或** AI 下子一次，即 2 步为一回合），你将获得两个关注，仅限前 3 名。
 
-对于奖励的领取，请**[洛谷](https://www.luogu.com.cn)私信** @[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋奖励领取】”。为了避免虚假情况，我们可能会询问你的下棋步骤。
+对于奖励的领取，请[**洛谷**](https://www.luogu.com.cn)**私信**@[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋奖励领取】”。为了避免虚假情况，我们可能会询问你的下棋步骤。
 
 **提示：不一定存在拿到奖励的操作步骤。**
 
@@ -70,7 +70,7 @@ int main(){
 
 - 如何提出建议？
 
-请[**洛谷**](https://www.luogu.com.cn)私信@[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋建议反馈】”。同时，你也可以通过在此项目下加 Issue 来提出建议。
+请[**洛谷**](https://www.luogu.com.cn)**私信**@[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋建议反馈】”。同时，你也可以通过在此项目下加 Issue 来提出建议。
 
 ## 致谢
 
