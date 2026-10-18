@@ -1,25 +1,68 @@
+:::align{center}
+
 ![](https://cdn.luogu.com.cn/upload/image_hosting/06wqmv0v.png)
+
+:::
 
 [前情提要](https://www.luogu.com.cn/article/k3wx8ohb)
 
-[洛谷对应专栏](https://www.luogu.com.cn/article/miq58bj8)
+[项目 github 仓库](https://github.com/RickyZhu-ZRQ/Tic-tac-toe_plus_AI)（部分内容尚未更新，未来可能更新；速度较慢，你可以到文末“友情链接”处下载相关资源）
 
 **如果你在不允许玩此小游戏的时候玩，后果自负。**
 
 ## 项目概述
 
-这是一个智能**升级版**井字棋软件，你可以和 AI 对弈或者双人对弈，甚至可以看 AI 自己和自己对弈。对于更多项目的细节，你可以在文初的“前情提要”了解。
+这是一个智能**升级版**井字棋软件，你可以和 AI 对弈或者双人对弈，甚至可以看 AI 和 AI 对弈。对于更多以前项目的细节，你可以在文初的“前情提要”了解。
 
 **提示：该项目只能在 Windows 下运行。**
+
+## 适用对象
+
+- 在**空闲时分**希望稍稍娱乐，又没有同伴一起玩。
+- 想和同伴一起玩这个游戏，却因其规则不易用纸笔模拟而不便。
+- 想开发一个棋类简易 AI，又找不到示例。
+
+## 游戏规则
+
+### 基本规则（普通井字棋）
+1. 两个玩家轮流在 $3\times 3$ 棋盘上下子
+2. 先连成一条长度为 $3$ 直线（横、竖、斜）的玩家获胜
+### 特殊规则（井字棋 Plus 新增）
+
+1. 第 $6$ 子落下后 → 消第 $1$ 子
+2. 第 $7$ 子落下后 → 消第 $2$ 子
+3. 第 $8$ 子落下后 → 消第 $3$ 子
+4. 以此类推，循环消失
+
+## 代码揭秘
+
+- 游戏界面使用 Windows 控制台函数编写，轻量而无需外来库。
+- 核心 AI 使用 Minimax 对抗搜索实现，并加上 Alpha-Beta 剪枝。
 
 ## 更新内容
 
 在原版本的基础上，我们对项目做了以下修改：
 
-- 增加游戏的“难度选择”功能，将和“参数配置”在一起，机制类似，共有“简单”“中等”“困难”“王者”四个难度（AI 强度）
-- 加快 AI 在后期的运行速度
-- 优化界面，增加一些清屏
-- 对 GitHub 仓库进行完善
+- 增加游戏的“难度选择”功能，将和“参数配置”在一起，机制类似，共有“简单”“中等”“困难”“王者”四个难度（AI 强度）。
+- 加快 AI 在后期的运行速度。
+- 优化界面，增加一些清屏。
+- 对 GitHub 仓库进行完善。
+
+## 界面展示
+
+下面展示了程序的部分界面，完整使用方法见“相关链接”的项目文档。
+
+![程序开始](https://cdn.luogu.com.cn/upload/image_hosting/j280cnp9.webp "程序开始")
+
+![游戏规则](https://cdn.luogu.com.cn/upload/image_hosting/fr4wokz7.webp "游戏规则")
+
+![开始游戏](https://cdn.luogu.com.cn/upload/image_hosting/lg96dndy.webp "开始游戏")
+
+![AI 落子](https://cdn.luogu.com.cn/upload/image_hosting/zta6l0s5.webp "AI 落子")
+
+![后手胜利](https://cdn.luogu.com.cn/upload/image_hosting/8fpz5er5.webp "后手胜利")
+
+![退出程序](https://cdn.luogu.com.cn/upload/image_hosting/h3mu4qll.webp "退出程序")
 
 ## 活动：你们的 AI 有问题
 
@@ -27,7 +70,7 @@
 
 如果你在“**人机对弈（AI 先手）**”或“**人机对弈（你先手）**”模式下、难度选择为“**王者**”的情况下在第 12 步及以内获胜（这里一步指的是玩家**或** AI 下子一次，即 2 步为一回合），你将获得两个关注，仅限前 3 名。
 
-对于奖励的领取，请[**洛谷**](https://www.luogu.com.cn)**私信**@[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋奖励领取】”。为了避免虚假情况，我们可能会询问你的下棋步骤。
+对于奖励的领取，请**私信** @[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋奖励领取】”。为了避免虚假情况，我们可能会询问你的下棋步骤。
 
 **提示：不一定存在拿到奖励的操作步骤。**
 
@@ -49,13 +92,13 @@
 
 - 源代码显示乱码怎么办？
 
-请将源代码**文件**拖入游览器中，复制文本粘贴回编辑器。（实测笔者 Windows 11 电脑的 Edge 游览器可以）
+请将源代码**文件**拖入游览器中，复制文本粘贴回编辑器（实测笔者 Windows 11 电脑的 Edge 游览器可以）。
 
 - 如何运行三个文件？
 
 解压并处理（可能的）编码问题后在 **run.cpp 所在的文件夹**中新建一个 build.cpp，内容如下。
 
-```cpp
+```cpp line-numbers
 #include<cstdlib>
 int main(){
 	system("\"g++.exe\" ./run.cpp ./dfs.cpp -o ./zhiyi.exe -std=c++14 -O2 -static -Wl,--stack=67108864");
@@ -66,11 +109,11 @@ int main(){
 
 - 为什么要使用题目作为公告板？
 
-我们发现如果使用剪贴板或公开文章作为公告板，需要至[洛谷保存站](https://luogu.me)访问，对于限制网络的同学不太方便。于是我们模仿部分比赛的公告栏，使用题目作为公告板。
+我们发现如果使用剪贴板或公开文章作为公告板，需要至[洛谷保存站](https://luogu.me)访问，对于限制网络的同学不太方便。于是我们模仿以前部分比赛的公告栏，使用题目作为公告板。
 
 - 如何提出建议？
 
-请[**洛谷**](https://www.luogu.com.cn)**私信**@[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋建议反馈】”。同时，你也可以通过在此项目下加 Issue 来提出建议。
+请**私信** @[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋建议反馈】”。
 
 ## 致谢
 
