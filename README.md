@@ -1,13 +1,13 @@
 
 ![](https://pomf.lain.la/f/75i1n8nm.png)
 
-注：GitHub仓库的readme作者与洛谷文档作者为两人，因此有少许不同喵
+注：GitHub 仓库的 README 作者与洛谷文章作者为两人，因此有少许不同喵。
 
 [前情提要](https://www.luogu.com.cn/article/k3wx8ohb)
 
-[洛谷文档](https://www.luogu.com.cn/article/miq58bj8)
+[洛谷文章](https://www.luogu.com.cn/article/miq58bj8)
 
-**~~如果你在不允许玩此小游戏的时候玩，后果自负喵~~**
+**~~如果你在不允许玩此小游戏的时候玩，后果自负喵。~~**
 
 ## 项目概述
 
