@@ -1,14 +1,13 @@
-:::align{center}
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/06wqmv0v.png)
+![](https://pomf.lain.la/f/75i1n8nm.png)
 
-:::
+注：GitHub仓库的readme作者与洛谷文档作者为两人，因此有少许不同喵
 
 [前情提要](https://www.luogu.com.cn/article/k3wx8ohb)
 
-[项目 github 仓库](https://github.com/RickyZhu-ZRQ/Tic-tac-toe_plus_AI)（部分内容尚未更新，未来可能更新；速度较慢，你可以到文末“友情链接”处下载相关资源）
+[洛谷文档](https://www.luogu.com.cn/article/miq58bj8)
 
-**如果你在不允许玩此小游戏的时候玩，后果自负。**
+**~~如果你在不允许玩此小游戏的时候玩，后果自负喵~~**
 
 ## 项目概述
 
@@ -34,7 +33,7 @@
 3. 第 $8$ 子落下后 → 消第 $3$ 子
 4. 以此类推，循环消失
 
-## 代码揭秘
+## 代码核心
 
 - 游戏界面使用 Windows 控制台函数编写，轻量而无需外来库。
 - 核心 AI 使用 Minimax 对抗搜索实现，并加上 Alpha-Beta 剪枝。
@@ -52,17 +51,17 @@
 
 下面展示了程序的部分界面，完整使用方法见“相关链接”的项目文档。
 
-![程序开始](https://cdn.luogu.com.cn/upload/image_hosting/j280cnp9.webp "程序开始")
+![程序开始](https://pomf.lain.la/f/mq96g4ec.png)
 
-![游戏规则](https://cdn.luogu.com.cn/upload/image_hosting/fr4wokz7.webp "游戏规则")
+![游戏规则](https://pomf.lain.la/f/oon2r572.png)
 
-![开始游戏](https://cdn.luogu.com.cn/upload/image_hosting/lg96dndy.webp "开始游戏")
+![开始游戏](https://pomf.lain.la/f/tvryz7i0.png)
 
-![AI 落子](https://cdn.luogu.com.cn/upload/image_hosting/zta6l0s5.webp "AI 落子")
+![AI 落子](https://pomf.lain.la/f/izp6a8ft.png)
 
-![后手胜利](https://cdn.luogu.com.cn/upload/image_hosting/8fpz5er5.webp "后手胜利")
+![后手胜利](https://pomf.lain.la/f/7k61sh2b.png)
 
-![退出程序](https://cdn.luogu.com.cn/upload/image_hosting/h3mu4qll.webp "退出程序")
+![退出程序](https://pomf.lain.la/f/m4h15nq2.png)
 
 ## 活动：你们的 AI 有问题
 
@@ -72,7 +71,9 @@
 
 对于奖励的领取，请**私信** @[wolf224322](https://www.luogu.com.cn/user/1826908) 或 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 并在私信开头加上“【井字棋奖励领取】”。为了避免虚假情况，我们可能会询问你的下棋步骤。
 
-**提示：不一定存在拿到奖励的操作步骤。**
+**提示：窝也不知道是否存在拿到奖励的操作步骤。**
+
+~~真的有人要两个关注吗~~
 
 ## 相关链接
 
@@ -117,7 +118,7 @@ int main(){
 
 ## 致谢
 
-感谢 @[RickyZhu](https://www.luogu.com.cn/user/2003521) 编写大部分项目代码。
+感谢 @[RickyZhu（其实就是自己喵）](https://www.luogu.com.cn/user/2003521) 编写大部分项目代码。
 
 感谢 @[lijingshu_304775](https://www.luogu.com.cn/user/1019968)、@[jsntzth666](https://www.luogu.com.cn/user/1294443)、@[chenyongxi3](https://www.luogu.com.cn/user/1047464)、@[ChasonWang](https://www.luogu.com.cn/user/1251100) 为我们原版项目提出建议，使我们的项目越来越好。
 
